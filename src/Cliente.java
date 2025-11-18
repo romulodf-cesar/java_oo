@@ -1,6 +1,9 @@
-public class Cliente {
+ public abstract class Cliente {
 
-
+    //Ela possui métodos concretos e métodos abstratos
+    // Ela esta no alto nível da abstração
+    //Nao pode ser instanciada.
+    //get set contrutor..
     private String nome;
     private String email;
     private String fone;
@@ -68,4 +71,6 @@ public class Cliente {
                 this.getSalarioBruto()
         );
     }
+    //assinatura ,um contrato.
+    public abstract boolean obterIdentificacaoPrincipal();
 }

@@ -9,14 +9,17 @@ public class Main {
         String foneTxt = JOptionPane.showInputDialog("Digite o fone");
         String fatAnualTxt = JOptionPane.showInputDialog("Digite o fatur. anual");
         double fatAnual = Double.parseDouble(fatAnualTxt);
+        //Tipo primitivo: int, double, float, long, short
+        //String - é uma classe
+        // double =======  Double (Wrappers)
 
         ClienteJuridico c1 = new ClienteJuridico(nomeTxt,emailTxt,foneTxt,cnpjTxt,numTxt,fatAnual);
           /*c1.setNome("Paulo");
           c1.setEmail("paulo@gmail.com");
           c1.setFone("61985858596");
           c1.setSalarioBruto(7800);*/
-        System.out.println("\nJuridico:\nCNPJ: "+c1.getCnpj()+"\nNumIE: "+c1.getNumIE()+"\nFaturamento: "+c1.getFaturamentoAnual()+"\n");
-        JOptionPane.showMessageDialog(null,"Faturamento Anual"+c1.getFaturamentoAnual());
+        System.out.println("\nJuridico:\n"+"Nome:"+c1.getNome()+"CNPJ: "+c1.getCnpj()+"\nNumIE: "+c1.getNumIE()+"\nFaturamento: "+c1.getFaturamentoAnual()+"\n");
+        JOptionPane.showMessageDialog(null,"Faturamento Anual"+c1.getFaturamentoAnual()+"Nome da Empresa"+c1.getNome());
         ClienteFisico c2 = new ClienteFisico("Gabriel",
                 "gabriel@nanasa.com.br",
                 "61989897887",

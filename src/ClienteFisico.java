@@ -41,7 +41,7 @@ public class ClienteFisico extends Cliente implements ICalculoImposto {
     @Override
     public double calcular() {
 
-        return (this.salarioBruto - (this.salarioBruto)*ICalculoImposto.TAXA_IMPOSTO)-7000;
+        return (this.salarioBruto - (this.salarioBruto)*ICalculoImposto.TAXA_IMPOSTO);
     }
 
     @Override

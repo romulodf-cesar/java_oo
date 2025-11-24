@@ -24,6 +24,7 @@ public class Main {
                 "gabriel@nanasa.com.br",
                 "61989897887",
                 5600,"999.999.000-00");
+        System.out.println("O gabriel ganhará:"+c2.calcular());
         ClienteFisico c3 = new ClienteFisico("Gabriel",
                 "gabriel@nanasa.com.br",
                 "61989897887",
